@@ -10,7 +10,7 @@ const VideoDetail = ({ video }) => {
   return (
     <div className="ui segment">
       <div className="ui embed">
-        <iframe src={videoUrl} allowFullScreen></iframe>
+        <iframe title={video.snippet.title} src={videoUrl} allowFullScreen></iframe>
       </div>
       <h4 className="ui header">{video.snippet.title}</h4>
       <p className="ui content">{video.snippet.description}</p>
